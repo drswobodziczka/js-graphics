@@ -1,11 +1,30 @@
 {
-
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "lint": "eslint ./spec/**.* ./lib/**.*"
   },
   "dependencies": {
     "browserify": "^14.5.0",
+    "eslint": "^4.13.1",
     "jasmine": "^2.8.0",
     "three": "^0.89.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "impliedStrict": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "jasmine": true
+    },
+    "rules": {
+      "semi": 2
+    }
   }
 }
