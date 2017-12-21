@@ -1,6 +1,11 @@
 {
+
+  "scripts": {
+    "test": "jasmine"
+  },
   "dependencies": {
     "browserify": "^14.5.0",
+    "jasmine": "^2.8.0",
     "three": "^0.89.0"
   }
 }
